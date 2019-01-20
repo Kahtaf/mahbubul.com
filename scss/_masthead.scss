@@ -1,0 +1,45 @@
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(15rem + 72px);
+  padding-bottom: 15rem;
+  background: url(../img/header.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .masthead-content {
+    z-index: 1;
+    position: relative;
+    .masthead-heading {
+      font-size: 4rem;
+    }
+    .masthead-subheading {
+      font-size: 2rem;
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(18rem + 55px);
+    padding-bottom: 18rem;
+    .masthead-content {
+      .masthead-heading {
+        font-size: 6rem;
+      }
+      .masthead-subheading {
+        font-size: 4rem;
+      }
+    }
+  }
+}
